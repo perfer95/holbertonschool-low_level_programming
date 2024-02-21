@@ -5,7 +5,9 @@
 #include <stdio.h>
 
 /**
- * Prints a message and return 0
+ * main - Show a mesasge
+ *
+ * return: 0
  */
 int main(void)
 {
