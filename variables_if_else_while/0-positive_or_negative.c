@@ -7,6 +7,7 @@
  * stored in the variable n is positive or negative.
  */
 
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
