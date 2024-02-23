@@ -1,3 +1,5 @@
+#ifndef MAIN_H
+#define MAIN_H
 /*
  * File: main.h
  * Author: perfer
@@ -5,3 +7,5 @@
  */
 
 int _putchar(char c);
+
+#endif
