@@ -20,13 +20,13 @@ int main(void)
 	while (lowAlph <= 'z')
 	{
 		putchar(lowAlph);
-		first++;
+		lowAlph;
 	}
 
 	while (upperAlph <= 'Z')
 	{
 		putchar(upperAlph);
-		first++;
+		upperAlph;
 	}
 
 	putchar('\n');
