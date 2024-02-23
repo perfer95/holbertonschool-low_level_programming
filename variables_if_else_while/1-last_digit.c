@@ -6,7 +6,7 @@
  * less than 6 or if it is equal to zero.
  */
 
-#include <stdio>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
