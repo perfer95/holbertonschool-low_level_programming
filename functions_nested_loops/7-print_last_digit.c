@@ -6,6 +6,7 @@
  */
 
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * print_last_digit - computes
@@ -19,7 +20,7 @@ int print_last_digit(int n)
 
 	last = n % 10;
 
-	_putchar(last + '0');
+	_putchar(abs(last) + '0');
 
 	return (last);
 }
