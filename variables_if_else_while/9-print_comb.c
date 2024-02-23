@@ -18,7 +18,7 @@ int main(void)
 
 	while (numComb <= 9)
 	{
-		putchar((char)numComb);
+		putchar(numComb + '0');
 
 		if (numComb != 9)
 		{
