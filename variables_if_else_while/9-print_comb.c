@@ -20,7 +20,7 @@ int main(void)
 	{
 		putchar((char)numComb);
 
-		if (numComb != '9')
+		if (numComb != 9)
 		{
 			putchar(',');
 			putchar(' ');
