@@ -13,7 +13,7 @@
  * Description: print the table
  * Return: void
  */
-void jack_bauer(void)
+void times_table(void)
 {
 	int i = 0;
 	int j = 0;
@@ -29,7 +29,7 @@ void jack_bauer(void)
 			{
 				_putchar(num + '0');
 				_putchar(',');
-                                _putchar(' ');
+				_putchar(' ');
 			}
 			else if (num < 10 && j != 9)
 			{
@@ -49,13 +49,13 @@ void jack_bauer(void)
 			else if (num < 10 && j == 9)
 			{
 				_putchar(' ');
-                                _putchar(num + '0');
+				_putchar(num + '0');
 				_putchar('\n');
 			}
 			else if (num >= 10 && j == 9)
 			{
 				_putchar((num / 10) + '0'); /*First number*/
-                                _putchar((num % 10) + '0');/*Last number*/
+				_putchar((num % 10) + '0');/*Last number*/
 				_putchar('\n');
 			}
 
