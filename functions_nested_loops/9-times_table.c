@@ -1,10 +1,3 @@
-/*
- * File: 9-times_table.c
- * Author: perfer
- * Description: function that prints
- * the 9 times table, starting with 0.
- */
-
 #include "main.h"
 #include <stdio.h>
 
@@ -15,9 +8,7 @@
  */
 void times_table(void)
 {
-	int i = 0;
-	int j = 0;
-	int num;
+	int i = 0, j = 0, num;
 
 	while (i <= 9)
 	{
@@ -41,8 +32,8 @@ void times_table(void)
 			}
 			else if (num >= 10 && j != 9)
 			{
-				_putchar((num / 10) + '0'); /*First number*/
-				_putchar((num % 10) + '0');/*Last number*/
+				_putchar((num / 10) + '0');
+				_putchar((num % 10) + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
@@ -54,14 +45,12 @@ void times_table(void)
 			}
 			else if (num >= 10 && j == 9)
 			{
-				_putchar((num / 10) + '0'); /*First number*/
-				_putchar((num % 10) + '0');/*Last number*/
+				_putchar((num / 10) + '0');
+				_putchar((num % 10) + '0');
 				_putchar('\n');
 			}
-
 			j++;
 		}
-
 		j = 0;
 		i++;
 	}
