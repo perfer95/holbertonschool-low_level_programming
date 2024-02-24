@@ -22,7 +22,7 @@ void jack_bauer(void)
 
 	while (hourDec <= 2)
 	{
-		while (hourUnit <= 3)
+		while (hourUnit <= 9 && (hourDec != 2 || hourUnit != 4))
 		{
 			while (minuteDec <= 5)
 			{
