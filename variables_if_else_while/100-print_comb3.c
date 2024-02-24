@@ -24,16 +24,15 @@ int main(void)
 			putchar(numDec + '0');
 			putchar(numUnit + '0');
 
-			if (numDec == 8 && numUnit == 9)
+			if (numDec != 8 || numUnit != 9)
 			{
-				continue;
+				putchar(',');
+				putchar(' ');
 			}
-
-			putchar(',');
-			putchar(' ');
 			numUnit++;
 		}
-		numDec++;
+		numUnit = 0;
+		numUnit = numDec + 1;
 	}
 	putchar('\n');
 
