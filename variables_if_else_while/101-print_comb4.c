@@ -39,7 +39,7 @@ int main(void)
 			numDec++;
 		}
 		numDec = numHund + 1;
-		numDec++;
+		numHund++;
 	}
 	putchar('\n');
 
