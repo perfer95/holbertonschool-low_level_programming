@@ -16,7 +16,7 @@
  */
 int print_last_digit(int n)
 {
-	long n_2 = n
+	long n_2 = n;
 	int last;
 
 	last = abs(n_2) % 10;
