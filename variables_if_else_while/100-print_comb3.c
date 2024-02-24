@@ -31,7 +31,7 @@ int main(void)
 			}
 			numUnit++;
 		}
-		numUnit = 0;
+		numDec++;
 		numUnit = numDec + 1;
 	}
 	putchar('\n');
