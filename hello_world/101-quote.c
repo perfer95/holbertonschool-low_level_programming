@@ -17,7 +17,7 @@
  */
 int main(void)
 {
-	char message[] = "and that piece of art isuseful\" - " +
+	char *message = "and that piece of art isuseful\" - " +
 		"Dora Korpar, 2015-10-19\n";
 
 	write(2, message, strlen(message));
