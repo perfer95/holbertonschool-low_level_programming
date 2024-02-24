@@ -24,7 +24,7 @@ int main(void)
 			putchar(numDec + '0');
 			putchar(numUnit + '0');
 
-			if (digit1 == 8 && digit2 == 9)
+			if (numDec == 8 && numUnit == 9)
 			{
 				continue;
 			}
