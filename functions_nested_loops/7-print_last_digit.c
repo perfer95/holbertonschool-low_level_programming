@@ -16,11 +16,11 @@
  */
 int print_last_digit(int n)
 {
-	long last;
+	int last;
 
-	last = (long)(abs(n) % 10);
+	last = abs((long)n) % 10;
 
-	_putchar((int)last + '0');
+	_putchar(last + '0');
 
 	return (last);
 }
