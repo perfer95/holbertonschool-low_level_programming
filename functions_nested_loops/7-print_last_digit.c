@@ -20,7 +20,14 @@ int print_last_digit(int n)
 	long n_2 = n;
 	int last;
 
-	last = (int)((-1 * n_2) % 10);
+	if (n_2 < 0)
+	{
+		last = (int)((-1 * n_2) % 10);
+	}
+	else
+	{
+		last = n % 10;
+	}
 
 	_putchar(last + '0');
 
