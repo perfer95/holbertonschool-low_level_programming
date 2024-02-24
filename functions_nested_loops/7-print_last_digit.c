@@ -19,7 +19,7 @@ int print_last_digit(int n)
 	long n_2 = n
 	int last;
 
-	last = (int)(abs(n_2) % 10);
+	last = abs(n_2) % 10;
 
 	_putchar(last + '0');
 
