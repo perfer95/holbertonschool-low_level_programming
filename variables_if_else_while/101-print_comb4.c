@@ -35,13 +35,20 @@ int main(void)
 				}
 				numUnit++;
 			}
-			numUnit = numDec + 1;
 			numDec++;
+			numUnit = numDec + 1;
+			if (numUnit == 10)
+			{
+				numUnit = 9;
+			}
 		}
-		numDec = numHund + 1;
 		numHund++;
+		numDec = numHund + 1;
+		if (numDec == 9)
+		{
+			numDec = 8;
+		}
 	}
 	putchar('\n');
-
 	return (0);
 }
