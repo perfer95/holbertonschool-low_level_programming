@@ -28,7 +28,7 @@ int main(void)
 		n1 = n2;
 		n2 = fn;
 
-		if (i != 49 )
+		if (i != 49)
 		{
 			printf(", ");
 		}
