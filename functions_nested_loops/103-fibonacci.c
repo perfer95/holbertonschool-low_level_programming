@@ -14,7 +14,7 @@
  */
 int main(void)
 {
-	float  sum = 0;
+	unsigned long sum = 0;
 	unsigned long fn;
 	unsigned long n1 = 0;
 	unsigned long n2 = 1;
@@ -31,6 +31,6 @@ int main(void)
 		n1 = n2;
 		n2 = fn;
 	}
-	printf("%.0f\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
