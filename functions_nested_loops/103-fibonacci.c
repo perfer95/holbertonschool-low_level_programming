@@ -33,6 +33,6 @@ int main(void)
 		n2 = fn;
 	}
 	r = (int)sum;
-	printf("%lu\n", sum);
+	printf("%i\n", r);
 	return (0);
 }
