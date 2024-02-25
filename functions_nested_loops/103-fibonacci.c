@@ -15,7 +15,7 @@
 int main(void)
 {
 	unsigned long sum = 0;
-	unsigned long fn;
+	unsigned long fn = 0;
 	unsigned long n1 = 0;
 	unsigned long n2 = 1;
 
@@ -31,6 +31,6 @@ int main(void)
 		n1 = n2;
 		n2 = fn;
 	}
-	printf("%ld\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
