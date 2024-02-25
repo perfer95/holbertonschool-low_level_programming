@@ -14,6 +14,7 @@
  */
 int main(void)
 {
+	int r;
 	unsigned long sum = 0;
 	unsigned long fn;
 	unsigned long n1 = 0;
@@ -31,6 +32,7 @@ int main(void)
 		n1 = n2;
 		n2 = fn;
 	}
+	r = (int)sum;
 	printf("%lu\n", sum);
 	return (0);
 }
