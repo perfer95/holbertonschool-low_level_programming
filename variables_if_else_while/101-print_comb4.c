@@ -14,15 +14,13 @@
  */
 int main(void)
 {
-	int numHund = 0;
-	int numDec = 1;
-	int numUnit = 2;
+	int numHund, numDec, numUnit;
 
-	while (numHund < 8)
+	for (numHund = 0; numHund < 8; numHund++)
 	{
-		while (numDec < 9)
+		for (numDec = numHund + 1; numDec < 9; numDec++)
 		{
-			while (numUnit < 10)
+			for (numUnit = numDec + 1; numUnit < 10; numUnit++)
 			{
 				putchar(numHund + '0');
 				putchar(numDec + '0');
@@ -33,22 +31,10 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-				numUnit++;
 			}
-			numDec++;
-			numUnit = numDec + 1;
-			if (numUnit == 10)
-			{
-				numUnit = 9;
-			}
-		}
-		numHund++;
-		numDec = numHund + 1;
-		if (numDec == 9)
-		{
-			numDec = 8;
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
