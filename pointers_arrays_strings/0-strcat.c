@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * *_strcat - change a value o a variable with pointers
+ * _strcat - change a value o a variable with pointers
  * @dest: string 2
  * @src: string 1
- * return: a char pointer
+ * Return: a char pointer
  */
 char *_strcat(char *dest, char *src)
 {
