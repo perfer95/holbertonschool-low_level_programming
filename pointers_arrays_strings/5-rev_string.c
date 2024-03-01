@@ -22,7 +22,7 @@ void rev_string(char *s)
 
 	k = i - 1; /*lenght of s without \0 but in format position*/
 
-	for (j = 0; j <= (k / 2); j++)
+	for (j = 0; j < (i / 2); j++)
 	{
 		aux = s[j];
 		s[j] = s[k];
