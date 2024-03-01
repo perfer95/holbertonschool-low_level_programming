@@ -20,7 +20,7 @@ void rev_string(char *s)
 	{
 		inv[i] = s[i];
 	}
-	inv[i] = '\n'
+	inv[i] = '\n';
 	k = i;
 
 	for (j = 0; j <= i; j++)
