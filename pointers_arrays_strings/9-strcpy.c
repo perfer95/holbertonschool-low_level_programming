@@ -5,11 +5,12 @@
 #include "main.h"
 
 /**
- * print_array - function that prints n elements
- * of an array of integers
+ * _strcpy - Write a function that copies the string pointed
+ * to by src, including the terminating null byte (\0), to
+ * the buffer pointed to by dest.
  * @dest: array which is goin to recibe the string
  * @src: string to copy
- * Return: empty
+ * Return: variable dest
  */
 char *_strcpy(char *dest, char *src)
 {
