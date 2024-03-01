@@ -16,6 +16,8 @@ void rev_string(char *s)
 	int k = 0;
 	char inv[sizeof(s) + 1];
 
+	_putchar(sizeof(s));
+
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		inv[i] = s[i];
