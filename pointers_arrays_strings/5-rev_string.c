@@ -14,20 +14,19 @@ void rev_string(char *s)
 {
 	int i, j;
 	int k = 0;
-	char inv[sizeof(s) + 1];
-
-	_putchar(sizeof(s));
+	int aux;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		inv[i] = s[i];
 	}
-	inv[i] = '\n';
-	k = i;
 
-	for (j = 0; j <= i; j++)
+	k = i - 1; /*lenght of s without \0 but in format position*/
+
+	for (j = 0; j <= (k / 2); j++)
 	{
-		s[j] = inv[k];
+		aux = s[j];
+		s[j] = s[k];
+		s[k] = aux;
 		k--;
 	}
 
