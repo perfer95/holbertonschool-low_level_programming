@@ -28,4 +28,5 @@ void rev_string(char *s)
 		s[j] = inv[k];
 		k--;
 	}
+
 }
