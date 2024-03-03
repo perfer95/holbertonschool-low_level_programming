@@ -8,10 +8,10 @@
 int main(void)
 {
 	unsigned long num = 612852475143;
-	unsigned long i;
+	unsigned long i = 2;
 	unsigned long  factor = 1;
 
-	for (i = 2; i <= num; i++)
+	while (num != 1)
 	{
 		if ((num % i) == 0)
 		{
@@ -19,7 +19,11 @@ int main(void)
 			{
 				factor = i;
 			}
+
+			num = num / i;
+			i = 1;
 		}
+		i++;
 	}
 	printf("%lu", factor);
 	return (0);
