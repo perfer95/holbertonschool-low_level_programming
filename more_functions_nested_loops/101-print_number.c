@@ -1,5 +1,4 @@
 #include "main.h"
-#include <math.h>
 
 /**
  * print_number - function that prints an integer
@@ -8,8 +7,8 @@
  */
 void print_number(int n)
 {
-	unsigned int number;
-	unsigned int aux = 0;
+	int number;
+	int aux = 0;
 	int counter = 0, power = 1, i;
 
 	if (n < 0)
