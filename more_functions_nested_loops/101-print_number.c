@@ -10,7 +10,7 @@ void print_number(int n)
 {
 	unsigned int number;
 	unsigned int aux = 0;
-	int counter = 0;
+	int counter = 0, power = 1;
 
 	if (n < 0)
 	{
@@ -35,10 +35,15 @@ void print_number(int n)
 
 		while (counter >= 0)
 		{
-			number = n / pow(10, counter);
+			for (int i = 0; i < counter; i++)
+			{
+				power *= 10;
+			}
+			number = n / power;
 			_putchar(number + '0');
-			n = n - (number * pow(10, counter));
+			n = n - (number * power);
 			counter--;
+			power = 1;
 		}
 	}
 }
