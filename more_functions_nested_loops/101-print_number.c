@@ -8,8 +8,8 @@
 void print_number(int n)
 {
 	unsigned int number;
-	unsigned int aux = 0;
-	unsigned int counter = 0, power = 1, i;
+	unsigned int aux = 0, power = 1;
+	int counter = 0, i;
 
 	if (n < 0)
 	{
