@@ -25,6 +25,6 @@ int main(void)
 		}
 		i++;
 	}
-	printf("%lu", factor);
+	printf("%lu\n", factor);
 	return (0);
 }
