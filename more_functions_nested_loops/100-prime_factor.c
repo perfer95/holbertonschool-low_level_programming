@@ -8,7 +8,7 @@
 int main(void)
 {
 	unsigned long num = 612852475143;
-	int i;
+	unsigned long i;
 	unsigned long  factor = 1;
 
 	for (i = 2; i <= num; i++)
