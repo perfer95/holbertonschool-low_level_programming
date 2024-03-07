@@ -18,7 +18,7 @@ void print_diagsums(int *a, int size)
 	{
 		diag1 = diag1 + a[i];
 	}
-	for (i = (size - 1); i >= 0 ; i = (i - size - 1))
+	for (i = (size * size - 1); i >= 0 ; i = (i - size - 1))
 	{
 		diag2 = diag2 + a[i];
 	}
