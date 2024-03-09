@@ -21,21 +21,22 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else if (argc <= 0)
-	{
-		printf("0\n");
-		return (0);
-	}
 	else
 	{
 		money = atoi(argv[1]);
+
+		if (money < 0)
+		{
+			printf("0\n");
+			return (0);
+		}
 
 		for (i = 0; i < 5; i++)
 		{
 			coins = coins + (money / change[i]);
 			money = money % change[i];
 		}
+		printf("%d\n", coins);
 	}
-	printf("%d\n", coins);
 	return (0);
 }
