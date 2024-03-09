@@ -31,8 +31,8 @@ int main(int argc, char *argv[])
 
 		for (i = 0; i < 5; i++)
 		{
-			coins = coins + (money / change[0]);
-			money = money % change[0];
+			coins = coins + (money / change[i]);
+			money = money % change[i];
 		}
 	}
 	printf("%d\n", coins);
