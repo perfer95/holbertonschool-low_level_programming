@@ -29,7 +29,7 @@ int prime(int num, int aux)
  * @n: radican
  * Return: an integer
  */
-int is_prime_number(int n);
+int is_prime_number(int n)
 {
 	return (prime(n, 1));
 }
