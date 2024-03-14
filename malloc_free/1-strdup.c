@@ -24,7 +24,6 @@ char *_strdup(char *str)
 		{
 			size++;
 		}
-		size++;
 
 		for (i = 0; i <= size; i++)
 		{
