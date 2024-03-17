@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
 /**
@@ -13,7 +14,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	if (d != NULL)
 	{
 		printf("Name: %s\n", d->name == NULL ? "(nil)" : d->name);
-		printf("Age: %f\n", d->age == NULL ? "(nil)": d->age);
+		printf("Age: %f\n", d->age == NULL ? "(nil)" : d->age);
 		printf("Owner: %s\n", d->owner == NULL ? "(nil)" : d->owner);
 	}
 }
