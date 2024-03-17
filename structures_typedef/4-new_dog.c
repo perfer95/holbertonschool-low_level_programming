@@ -66,7 +66,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(create_dog);
 		return (NULL);
 	}
-	create_dog->name = strcpy(create_dog->name, name);
+	create_dog->name = _strcpy(create_dog->name, name);
 	create_dog->age = age;
 	size_owner = _strlen(owner);
 	create_dog->owner = malloc(size(char) * (size_owner + 1));
