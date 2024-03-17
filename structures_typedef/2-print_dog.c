@@ -14,7 +14,14 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	if (d != NULL)
 	{
 		printf("Name: %s\n", d->name == NULL ? "(nil)" : d->name);
-		printf("Age: %.6f\n", d->age == NULL ? "(nil)" : d->age);
+		if (d->age == NULL)
+		{
+			printf("Age: (nil)\n");
+		}
+		else
+		{
+			printf("Age: %f\n", d->age);
+		}
 		printf("Owner: %s\n", d->owner == NULL ? "(nil)" : d->owner);
 	}
 }
