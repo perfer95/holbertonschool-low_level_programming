@@ -3,11 +3,9 @@
 #include "dog.h"
 
 /**
- * new_dog - function that creates a new dog.
- * @name: dog´sname
- * @age: dog´sage
- * @owner: dog´s owner
- * Return: new dog
+ * free_dog - function that frees dogs.
+ * @d: struct
+ * Return: empty
  */
 void free_dog(dog_t *d)
 {
