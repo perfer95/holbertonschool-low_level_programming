@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "calc.h"
 
 /**
@@ -46,7 +45,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_int - module
+ * op_mod - module
  * @a: first integer
  * @b: second integer
  * Return: the modul of a by b
