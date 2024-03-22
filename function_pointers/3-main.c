@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", opaux(atoi(argv[1]), atoi(argv[3])));
+	return (0);
 }
 
 
