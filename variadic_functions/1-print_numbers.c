@@ -12,21 +12,22 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_list args; /*Firs variable*/
 
-	va_start(args, n);
-
-	for (i = 0; i < n; i++)
+	if (n > 0)
 	{
-		printf("%d", va_arg(args, int));
-
-		if (separator != NULL && *separator != 0 && (i != n - 1))
+		va_start(args, n);
+		for (i = 0; i < n; i++)
 		{
-			printf("%c ", *separator);
-		}
-		else if (i == n - 1)
-		{
-			printf("\n");
-		}
+			printf("%d", va_arg(args, int));
 
+			if (separator != NULL && *separator != 0 && (i != n - 1))
+			{
+				printf("%c ", *separator);
+			}
+			else if (i == n - 1)
+			{
+				printf("\n");
+			}
+		}
+		va_end(args);
 	}
-	va_end(args);
 }
