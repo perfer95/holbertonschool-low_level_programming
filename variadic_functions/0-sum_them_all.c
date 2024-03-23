@@ -8,7 +8,7 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	int sum = 0, i;
-	va_lis args; /*Firs variable*/
+	va_list args; /*Firs variable*/
 
 	if (n == 0)
 	{
@@ -19,7 +19,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		sum = sum + va_args(args, int);
+		sum = sum + va_arg(args, int);
 	}
 	va_end(args);
 
