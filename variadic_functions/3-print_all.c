@@ -22,7 +22,7 @@ void print_all(const char * const format, ...)
 		{ "f", p_float },
 		{ "s", p_char_ptr }
 	};
-	char *separator = "";
+	char *sep = "";
 
 	va_start(args, format);
 
@@ -33,8 +33,8 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == *type[j].identifier)
 			{
-				type[j].f(separator, args);
-				separator = ", ";
+				type[j].f(sep, args);
+				sep = ", ";
 			}
 			j++;
 		}
