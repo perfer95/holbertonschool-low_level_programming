@@ -9,7 +9,7 @@
  * Return: the address of the new node, or NULL if it failed
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
-{0
+{
 	dlistint_t *node, *auxi;
 
 	if (h == NULL)
