@@ -1,6 +1,46 @@
 #include "main.h"
 
 /**
+ * error_print - function to print problem
+ * @s: indicator
+ * @c: char
+ * Return: empty just print
+ */
+void error_print(int s, char *c)
+{
+	if (s == 1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", c);
+		exit(98);
+	}
+	if (s == 2)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", c);
+		exit(99);
+	}
+}
+
+/**
+ * close_f - function to print problem
+ * @s: indicator
+ * @s2: type var
+ * Return: empty just print
+ */
+void close_f(int s, int s2)
+{
+	if (s == 1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", s2);
+		exit(100);
+	}
+	if (s == 2)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", s2);
+		exit(100);
+	}
+}
+
+/**
  * main - program that copies the content of a file to another file.
  * @argc: counter
  * @argv: array
@@ -33,28 +73,15 @@ int main(int argc, char *argv[])
 	{
 		f_c = read(f, buf, 1024);
 		if (f_c == -1)
-		{
-			dprintf(STDERR_FILENO,
-					"Error: Can't read from file %s\n", argv[1]);
-			exit(98);
-		}
+			error_print(1, argv[1]);
 		t_c = write(t, buf, f_c);
 		if (t_c == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n",
-					argv[2]);
-			exit(99);
-		}
+			error_print(2, argv[2]);
 	}
 	if (close(f)  == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f);
-		exit(100);
-	}
+		close_f(1, f);
 	if (close(t) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", t);
-		exit(100);
-	}
+		close_f(2, t);
 	return (0);
 }
