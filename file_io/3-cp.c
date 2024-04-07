@@ -79,7 +79,6 @@ int main(int argc, char *argv[])
 			error_print(2, argv[2]);
 	}
 	if (close(f)  == -1)
-	{
 		close_f(1, f);
 	if (close(t) == -1)
 		close_f(2, t);
