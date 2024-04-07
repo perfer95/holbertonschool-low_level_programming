@@ -24,7 +24,9 @@ unsigned int binary_to_uint(const char *b)
 	while (i >= 0)
 	{
 		if (b[i] == '1')
+		{
 			numInt += _pow_recursion(2, i);
+		}
 		i--;
 	}
 
