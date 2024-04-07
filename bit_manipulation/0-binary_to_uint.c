@@ -8,7 +8,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int numInt = 0;
-	int i = 0;
+	int i = 0, pow = 0;
 
 	if (b == NULL)
 		return (0);
@@ -20,14 +20,15 @@ unsigned int binary_to_uint(const char *b)
 		i++;
 	}
 
-	i -= 1;
+	i--;
 	while (i >= 0)
 	{
 		if (b[i] == '1')
 		{
-			numInt = numInt +  _pow_recursion(2, i);
+			numInt = numInt +  _pow_recursion(2, pow);
 		}
 		i--;
+		pow++;
 	}
 
 	return (numInt);
